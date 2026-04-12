@@ -8,7 +8,7 @@ services:
     ports:
      - 9445:80
     volumes:
-     - ./bitwarden:/data:rw
+     - vaultwarden:/data:rw
     environment:
      - ADMIN_TOKEN=${ADMIN_TOKEN}
      - WEBSOCKET_ENABLED=true
@@ -20,4 +20,7 @@ services:
      - SMTP_TIMEOUT=30
      - SMTP_USERNAME=${SMTP_USERNAME}
      - SMTP_PASSWORD=${SMTP_PASSWORD}
-     - DOMAIN=https://secrets.by.vincent.mahn.ke
+     - DOMAIN=secrets.by.vincent.mahn.ke
+
+volumes:
+  vaultwarden:
