@@ -20,7 +20,7 @@ services:
      - SMTP_TIMEOUT=30
      - SMTP_USERNAME=${SMTP_USERNAME}
      - SMTP_PASSWORD=${SMTP_PASSWORD}
-     - DOMAIN=secrets.by.vincent.mahn.ke
+     - DOMAIN=https://secrets.by.vincent.mahn.ke
 
 volumes:
   vaultwarden:
